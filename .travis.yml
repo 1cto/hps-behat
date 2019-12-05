@@ -12,6 +12,7 @@ before_install:
   - composer install
 
 script:
+  - php composer.phar install
   - vendor/bin/behat -f cucumber_json
 
 after_script:
