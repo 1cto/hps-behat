@@ -5,8 +5,8 @@ php:
  - 7.2
 
 before_install:
-  - rvm install 2.3
-  - rvm use 2.3
+  - rvm install 2.6
+  - rvm use 2.6
   - gem install hiptest-publisher
   - "hiptest-publisher -c behat.conf --token=$SECRET_TOKEN --only=features,step_definitions --test-run-id=16135"
   - composer install
